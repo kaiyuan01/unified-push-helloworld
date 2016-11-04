@@ -2,6 +2,14 @@
 
 language: java
 sudo: false
-script: cd cordova;  npm install -g cordova
+script: 
+- cd cordova; 
+- npm install -g \
+   cordova
+- npm install -g ios-deploy
+- cordova platform add android
+- cordova plugin add aerogear-cordova-push
+
+
 # mvn clean install;
 
