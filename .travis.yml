@@ -6,6 +6,7 @@ script:
 - cd cordova
 - npm -version
 - npm install -g n
+- n stable
 - echo node.js version after upgrade
 - npm -version
 - npm install -g \
