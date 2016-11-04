@@ -5,10 +5,9 @@ sudo: false
 script: 
 - cd cordova
 - npm -version
+- npm install -g n
 - echo node.js version after upgrade
-- npm install -g n
-- npm install -g n
-
+- npm -version
 - npm install -g \
    cordova
 # - npm install -g ios-deploy
