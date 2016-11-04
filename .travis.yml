@@ -6,7 +6,7 @@ script:
 - cd cordova; 
 - npm install -g \
    cordova
-- npm install -g ios-deploy
+# - npm install -g ios-deploy
 - cordova platform add android
 - cordova plugin add aerogear-cordova-push
 
