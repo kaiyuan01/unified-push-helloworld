@@ -20,13 +20,14 @@ install:
   - echo y | android update sdk -u --filter android-22,android-23
 
 before_script:
-  - cordova platform rm android
-  - cordova platform add android
   
   # - npm install -g \
   # cordova
   # - npm install -g ios-deploy
 
+  - cordova platform rm android
+  - cordova platform add android
+  
   - cordova create push-test-proj com.ds.appid app-name
   - cd push-test-proj
   - cordova platform add android
