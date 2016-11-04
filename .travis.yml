@@ -30,6 +30,7 @@ before_script:
   - cordova platform rm android
   - cordova platform add android
   - cordova plugin add aerogear-cordova-push
+  # - cp -R ../* ./
 
 
 script:
