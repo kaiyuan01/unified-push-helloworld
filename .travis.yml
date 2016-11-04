@@ -5,13 +5,13 @@ sudo: true
 script: 
 - cd cordova
 - npm -version
-- sudo npm install -g n
+- npm install -g n
 - echo node.js version after upgrade
 - npm -version
 - npm install -g \
    cordova
 # - npm install -g ios-deploy
-- sudo cordova platform add android
+- cordova platform add android
 - cordova plugin add aerogear-cordova-push
 
 
