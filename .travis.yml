@@ -1,7 +1,7 @@
 
 
 language: java
-sudo: false
+sudo: true
 script: 
 - cd cordova
 - npm -version
