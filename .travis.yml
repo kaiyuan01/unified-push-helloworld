@@ -3,5 +3,5 @@
 language: java
 sudo: false
 script: cd cordova;  npm install -g cordova
-''' mvn clean install;
+# mvn clean install;
 
