@@ -12,6 +12,9 @@ script:
 - npm install -g \
    cordova
 # - npm install -g ios-deploy
+
+- cordova create push-test-proj com.ds.appid app-name
+- cd push-test-proj
 - cordova platform add android
 - cordova plugin add aerogear-cordova-push
 
