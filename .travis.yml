@@ -22,6 +22,16 @@ install:
 before_script:
   - cordova platform rm android
   - cordova platform add android
+  
+  # - npm install -g \
+  # cordova
+  # - npm install -g ios-deploy
+
+  - cordova create push-test-proj com.ds.appid app-name
+  - cd push-test-proj
+  - cordova platform add android
+  - cordova plugin add aerogear-cordova-push
+
 
 script:
   - cordova prepare
